@@ -1,0 +1,39 @@
+@import "./override.scss";
+
+:root {
+  --primary-color: #1890ff;
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --dark-color: #0f172a;
+  --dark-second-color: #1e293b;
+}
+
+html {
+  background-color: var(--white-color);
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  span,
+  p {
+    color: var(--black-color);
+  }
+}
+
+html.dark {
+  background-color: var(--dark-color);
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  span,
+  p {
+    color: var(--white-color);
+  }
+}
+
+body {
+  height: 100%;
+}
